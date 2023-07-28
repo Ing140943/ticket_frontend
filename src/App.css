@@ -1,4 +1,4 @@
-/* General styles */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -28,12 +28,10 @@ h2 {
   justify-content: space-between;
 }
 
-/* Ticket cards */
 .ticket {
   cursor: pointer;
   width: 100%;
   max-width: 400px;
-  /* margin: 10px auto; */
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -43,7 +41,6 @@ h2 {
 
 }
 
-/* Responsive styles */
 @media screen and (max-width: 768px) {
   .ticket {
     max-width: 100%;

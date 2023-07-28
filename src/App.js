@@ -40,7 +40,6 @@ function App() {
     setTickets(filteredTickets);
   };
 
-  // console.log(currentTicket);
   useEffect(() => {
     // Fetch all tickets and apply sorting and filtering
     fetchTickets();
