@@ -48,7 +48,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Helpdesk support ticket management</h1>
+      <h1>Helpdesk Support Ticket Management</h1>
       <TicketForm
         currentTicket={currentTicket}
         setSortBy={setSortBy}
@@ -68,18 +68,21 @@ function App() {
             <Card sx={{ minWidth: 275 }}>
               <CardContent>
                 <Typography variant="h6" component="div">
-                  {ticket.id} {ticket.title}
+                  {ticket.title}
+                </Typography>
+                <Typography variant="h7" component="div">
+                  ID: {ticket.id}
                 </Typography>
                 <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  {ticket.description}
+                  Detial: {ticket.description}
                 </Typography>
                 <Typography variant="body2">{ticket.contact_info}</Typography>
                 <Typography variant="body2">{ticket.status}</Typography>
                 <Typography variant="body2">
-                  {formatDate(ticket.created_date)}
+                  Date Create: {formatDate(ticket.created_date)}
                 </Typography>
                 <Typography variant="body2">
-                  {formatDate(ticket.updated_date)}
+                  Update Date: {formatDate(ticket.updated_date)}
                 </Typography>
               </CardContent>
             </Card>
